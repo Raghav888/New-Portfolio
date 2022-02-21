@@ -1,0 +1,53 @@
+.image-about {
+    background-image: url(../images/Raghav.jpg);
+}
+
+.dl-project,
+.nugget-project,
+.expense-project,
+.cash-project,
+.mantraui-project,
+.bookstore-project {
+    background-size: contain;
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+    border-radius: 7px;
+}
+
+.bookstore-project {
+    background-image: url(../images/bookstore.png);
+}
+
+.mantraui-project {
+    background-image: url(../images/mantraui.png);
+}
+
+.cash-project {
+    background-image: url(../images/cashmangement.png);
+}
+
+.expense-project {
+    background-image: url(../images/expenseapp.png);
+}
+
+.nugget-project {
+    background-image: url(../images/nuggets.png);
+}
+
+.dl-project {
+    background-image: url(../images/deep_learning_projects.jpg);
+}
+
+#blog-section {
+    padding-top: 0px;
+}
+
+#about-freelance {
+    background-image: url(../images/bg_1.jpg);
+    padding: 10px 0;
+}
+
+.image-freelance {
+    height: 300px;
+}
