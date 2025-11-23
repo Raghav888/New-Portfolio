@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shipping & Delivery | Raghav Bang</title>
+    <meta name="description"
+        content="Shipping & Delivery Information - Learn how live courses, recordings, and projects are delivered to you.">
+    <meta name="robots" content="index">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .shipping-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .shipping-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 50px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .shipping-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #ff9800;
+        }
+
+        .shipping-intro {
+            font-size: 1.1rem;
+            color: #666;
+            text-align: center;
+            margin-bottom: 50px;
+            line-height: 1.8;
+        }
+
+        .delivery-cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .delivery-card {
+            background: white;
+            border-left: 5px solid #ff9800;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .delivery-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .delivery-card h3 {
+            font-size: 1.5rem;
+            color: #ff9800;
+            font-weight: 700;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        .delivery-card h3 i {
+            font-size: 2rem;
+            margin-right: 15px;
+            color: #ff9800;
+        }
+
+        .delivery-card p {
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .delivery-card ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        .delivery-card li {
+            margin-bottom: 12px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            background-color: #f0f0f0;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .feature-list h4 {
+            color: #ff9800;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .feature-list ul {
+            margin: 0;
+            padding-left: 25px;
+        }
+
+        .feature-list li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .feature-list i {
+            color: #ff9800;
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 30px;
+            border-radius: 8px;
+            color: white;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .highlight-box h4 {
+            color: white;
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        .highlight-box p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .contact-info-box {
+            background-color: #e8f4f8;
+            padding: 25px;
+            border-left: 4px solid #17a2b8;
+            margin: 30px 0;
+            border-radius: 4px;
+        }
+
+        .contact-info-box p {
+            margin: 10px 0;
+            color: #0c5460;
+        }
+
+        .contact-info-box a {
+            color: #0056b3;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .contact-info-box a:hover {
+            text-decoration: underline;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #ff9800;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-link:hover {
+            background-color: #e68900;
+            text-decoration: none;
+            color: white;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .timeline-item {
+            padding-left: 50px;
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background-color: #ff9800;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #f8f9fa;
+        }
+
+        .timeline-item h5 {
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .timeline-item p {
+            color: #666;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .shipping-container {
+                padding: 30px 20px;
+            }
+
+            .shipping-title {
+                font-size: 1.8rem;
+            }
+
+            .shipping-section {
+                padding: 50px 0;
+            }
+
+            .delivery-card h3 {
+                font-size: 1.2rem;
+            }
+
+            .delivery-card h3 i {
+                font-size: 1.5rem;
+                margin-right: 10px;
+            }
+
+            .highlight-box {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><span>R</span>aghav Bang</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span> Menu
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="index.html#projects-section"
+                            class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a>
+                    </li>
+                    <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="shipping-section">
+        <div class="container">
+            <div class="shipping-container ftco-animate">
+                <h1 class="shipping-title">Shipping & Delivery Information</h1>
+
+                <div class="shipping-intro">
+                    <p>Welcome! Here's how we deliver our courses, course materials, and freelance services to you.</p>
+                    <p>Everything is delivered digitally to ensure you get instant access and flexible collaboration on
+                        your projects.</p>
+                </div>
+
+                <div class="delivery-cards">
+                    <!-- Live Courses Card -->
+                    <div class="delivery-card">
+                        <h3>
+                            <i class="ion-ios-videocam"></i>
+                            Live Courses via Google Meet
+                        </h3>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Live classes are conducted through Google Meet (video conferencing platform)</li>
+                            <li>Schedule and meeting links will be shared via email before the course starts</li>
+                            <li>You can join from any device with an internet connection (computer, tablet, smartphone)
+                            </li>
+                            <li>Interactive Q&A sessions during live classes</li>
+                            <li>Networking opportunities with other learners</li>
+                        </ul>
+                        <p><strong>What you need:</strong></p>
+                        <ul>
+                            <li>A stable internet connection</li>
+                            <li>A device with a camera and microphone (optional but recommended)</li>
+                            <li>Google Meet installed or access via web browser</li>
+                        </ul>
+                    </div>
+
+                    <!-- Recordings Card -->
+                    <div class="delivery-card">
+                        <h3>
+                            <i class="ion-ios-tape"></i>
+                            Course Recordings via Email
+                        </h3>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>All live classes are recorded for your convenience</li>
+                            <li>Recording links will be sent to your registered email address</li>
+                            <li>Access recordings anytime, anywhere at your own pace</li>
+                            <li>Watch and re-watch content as many times as you need</li>
+                            <li>Download options available where permitted</li>
+                        </ul>
+                        <p><strong>Delivery timeline:</strong></p>
+                        <ul>
+                            <li>Recordings are typically shared within 24 hours of the live class</li>
+                            <li>Check your email (including spam folder) for recording links</li>
+                            <li>All recordings remain accessible throughout your course duration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects Card -->
+                    <div class="delivery-card">
+                        <h3>
+                            <i class="ion-code"></i>
+                            Projects via GitHub
+                        </h3>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>All course projects and source code are shared via GitHub repositories</li>
+                            <li>GitHub links will be provided in course materials and via email</li>
+                            <li>Access project files, documentation, and starter code</li>
+                            <li>Submit your project solutions to GitHub repositories</li>
+                            <li>Get feedback on your code through GitHub issues and pull requests</li>
+                        </ul>
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>Version control and collaboration features</li>
+                            <li>Build your GitHub portfolio while learning</li>
+                            <li>Access to complete project repositories</li>
+                            <li>Learn industry-standard development practices</li>
+                        </ul>
+                    </div>
+
+                    <!-- Freelancing Services Card -->
+                    <div class="delivery-card">
+                        <h3>
+                            <i class="ion-briefcase"></i>
+                            Freelance Development Services
+                        </h3>
+                        <p><strong>How it works:</strong></p>
+                        <ul>
+                            <li>Custom web development, mobile apps, and software solutions tailored to your needs</li>
+                            <li>Project discussion and requirements gathering via email or video call</li>
+                            <li>Regular updates and progress reports shared through email or GitHub</li>
+                            <li>Source code and deliverables shared via GitHub repositories or direct file sharing</li>
+                            <li>Post-delivery support and maintenance options available</li>
+                        </ul>
+                        <p><strong>Deliverables include:</strong></p>
+                        <ul>
+                            <li>Complete, production-ready source code</li>
+                            <li>Documentation and deployment guides</li>
+                            <li>GitHub repositories for version control and collaboration</li>
+                            <li>Testing reports and quality assurance documentation</li>
+                            <li>Training or handover sessions if needed</li>
+                        </ul>
+                        <p><strong>Communication channels:</strong></p>
+                        <ul>
+                            <li>Email for project updates and file sharing</li>
+                            <li>Video calls via Google Meet for discussions</li>
+                            <li>GitHub for code collaboration and issue tracking</li>
+                            <li>Dedicated support for the project timeline</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Delivery Process Timeline -->
+                <div class="feature-list">
+                    <h4><i class="ion-ios-checkmark"></i> Complete Delivery Process - Courses</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h5>Step 1: Course Enrollment</h5>
+                            <p>You receive a confirmation email with your login credentials and course details.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 2: Pre-Course Setup</h5>
+                            <p>Google Meet links and GitHub repository access details are shared 24 hours before the
+                                course begins.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 3: Live Classes Begin</h5>
+                            <p>Join live classes on Google Meet as per the schedule provided. Interact with instructors
+                                and peers in real-time.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 4: Recording Access</h5>
+                            <p>Within 24 hours of each class, recording links are sent to your email for lifetime
+                                access.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 5: Project Collaboration</h5>
+                            <p>Access project repositories on GitHub. Work on assignments and submit solutions for
+                                review.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 6: Continuous Support</h5>
+                            <p>Get help via email, GitHub discussions, and community forums throughout your course
+                                duration.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Freelancing Workflow Timeline -->
+                <div class="feature-list">
+                    <h4><i class="ion-ios-checkmark"></i> Freelance Project Delivery Process</h4>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h5>Step 1: Initial Consultation</h5>
+                            <p>Discuss your project requirements, timeline, and budget via email or video call on Google
+                                Meet.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 2: Proposal & Agreement</h5>
+                            <p>Receive a detailed project proposal with scope, deliverables, timeline, and pricing.
+                                Agreement finalized.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 3: Project Kickoff</h5>
+                            <p>Project begins with technical setup. Regular updates and progress reports shared via
+                                email.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 4: Development & Collaboration</h5>
+                            <p>Active development with code shared on GitHub. You can track progress in real-time
+                                through the repository.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 5: Testing & Review</h5>
+                            <p>Project tested thoroughly. Testing reports and demos provided. Feedback incorporated and
+                                adjustments made.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 6: Delivery & Handover</h5>
+                            <p>Final deliverables including source code, documentation, and deployment guide shared.
+                                Training or handover sessions provided if needed.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h5>Step 7: Post-Delivery Support</h5>
+                            <p>Maintenance and support services available. Bug fixes and minor updates included in
+                                agreed support period.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Important Information -->
+                <div class="highlight-box">
+                    <h4>📌 Important to Know</h4>
+                    <p>All course materials are delivered instantly upon enrollment. Freelance projects are delivered
+                        according to the agreed timeline and scope. Make sure to check your email
+                        (including spam/promotions folder) for important course information and links. Your course
+                        access depends on your login credentials - keep them secure!</p>
+                </div>
+
+                <!-- Additional Information -->
+                <div class="feature-list">
+                    <h4>Additional Delivery Information</h4>
+                    <ul>
+                        <li><strong><i class="ion-checkmark"></i> Instant Access:</strong> Gain immediate access to
+                            course materials upon purchase</li>
+                        <li><strong><i class="ion-checkmark"></i> 24/7 Availability:</strong> Access recordings,
+                            materials, and project code anytime, anywhere</li>
+                        <li><strong><i class="ion-checkmark"></i> No Physical Shipping:</strong> Everything is delivered
+                            digitally - no waiting for packages</li>
+                        <li><strong><i class="ion-checkmark"></i> Lifetime Access:</strong> Access course materials for
+                            the lifetime of the course</li>
+                        <li><strong><i class="ion-checkmark"></i> Multiple Formats:</strong> Live sessions, recordings,
+                            code repositories, and project deliverables for flexible learning and collaboration</li>
+                        <li><strong><i class="ion-checkmark"></i> Global Access:</strong> Join from anywhere in the
+                            world - no geographical restrictions</li>
+                        <li><strong><i class="ion-checkmark"></i> Real-time Collaboration:</strong> For freelance
+                            projects, track progress on GitHub and get regular email updates</li>
+                    </ul>
+                </div>
+
+                <!-- Technical Requirements -->
+                <div class="feature-list">
+                    <h4>Technical Requirements</h4>
+                    <ul>
+                        <li><strong><i class="ion-checkmark"></i> Internet Connection:</strong> Stable, high-speed
+                            internet for live classes and streaming</li>
+                        <li><strong><i class="ion-checkmark"></i> Device:</strong> Computer, laptop, tablet, or
+                            smartphone</li>
+                        <li><strong><i class="ion-checkmark"></i> Browser:</strong> Modern web browser (Chrome, Firefox,
+                            Safari, Edge)</li>
+                        <li><strong><i class="ion-checkmark"></i> Email:</strong> Active email address for receiving
+                            course materials and recordings</li>
+                        <li><strong><i class="ion-checkmark"></i> GitHub Account:</strong> Free GitHub account for
+                            accessing and submitting projects</li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-box">
+                    <p><strong>Have questions about delivery?</strong></p>
+                    <p>For any issues with accessing course materials, recordings, or GitHub repositories, please
+                        contact us at:</p>
+                    <p><a href="mailto:raghavbang2012@gmail.com">raghavbang2012@gmail.com</a></p>
+                    <p style="font-size: 0.9rem; margin-top: 15px;">We'll help you get started within 24 business hours!
+                    </p>
+                </div>
+
+                <a href="index.html#contact-section" class="back-link">← Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section" style="padding: 50px 0;">
+        <div class="container">
+            <div class="row ">
+                <ul class="ftco-footer-social list-unstyled col-md-12 text-center ">
+                    <li class="ftco-animate"><a href="https://twitter.com/iamRaghavBang"><span
+                                class="icon-twitter"></span></a></li>
+                    <li class="ftco-animate"><a href="https://www.linkedin.com/in/raghavbang/"><span
+                                class="icon-linkedin"></span></a></li>
+                    <li class="ftco-animate"><a href="https://github.com/Raghav888"><span
+                                class="icon-github"></span></a></li>
+                    <li class="ftco-animate"><a href="https://www.instagram.com/iamraghavbang/"><span
+                                class="icon-instagram"></span></a></li>
+                </ul>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p><a href="https://peerlist.io/raghavbang"><span>Connect on Peerlist</span></a></p>
+                    <p>
+                        <a href="contact-us.html" style="color: #a1a1a1; text-decoration: none; margin: 0 10px;">Contact
+                            Us</a> |
+                        <a href="shipping-delivery.html"
+                            style="color: #a1a1a1; text-decoration: none; margin: 0 10px;">Shipping & Delivery</a> |
+                        <a href="refund-policy.html"
+                            style="color: #a1a1a1; text-decoration: none; margin: 0 10px;">Refund & Cancellation
+                            Policy</a> |
+                        <a href="privacy-policy.html"
+                            style="color: #a1a1a1; text-decoration: none; margin: 0 10px;">Privacy Policy</a> |
+                        <a href="terms-of-service.html"
+                            style="color: #a1a1a1; text-decoration: none; margin: 0 10px;">Terms of Service</a>
+                    </p>
+                    <p>
+                        No Copyright &copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>. No rights reserved || This website is made with <i class="icon-heart color-danger"
+                            aria-hidden="true"></i> by Raghav Bang.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/main.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
